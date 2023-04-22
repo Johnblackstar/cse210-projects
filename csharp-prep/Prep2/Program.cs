@@ -9,47 +9,52 @@ class Program
         string userInput = Console.ReadLine();
         int grade = int.Parse(userInput);
         int lastDigit = grade % 10;
+        string symbol = "";
+      
+          
 
-        if (lastDigit > 7)
+        if ( lastDigit > 7)
         {
-            Console.Write("+");
+            symbol = " + ";
         }
+        
         else if (lastDigit > 7 && grade >93 || grade < 60)
         {
-            Console.Write("");
+            symbol= ("");
         }
         else if (lastDigit<3)
         {
-            Console.Write("-");
+            symbol = ("-");
         }
         else 
         {
-            Console.Write("");
+            symbol = ("");
         }
+
        
 
         if (grade >=90)
 
-        {   
-            Console.WriteLine($"Your grade is A {lastDigit} ");
-            Console.WriteLine("Congratulation you passed");
 
+        {   
+            Console.WriteLine($"Your grade is A {symbol} ");
+            Console.WriteLine("Congratulation you passed");
         }
         else if ( grade >= 80)
         {
-            Console.WriteLine($"Your grade is B {lastDigit}");
+            Console.WriteLine($"Your grade is B {symbol}");
             Console.WriteLine("Congratulation you passed");
         }
 
         else if ( grade >= 70)
         {
-            Console.WriteLine($"Your grade is C {lastDigit}");
+            Console.WriteLine($"Your grade is C {symbol}");
             Console.WriteLine("Congratulation you passed");
         }
 
         else if ( grade >= 60)
         {
-            Console.WriteLine($"Your grade is D {lastDigit}");
+            Console.WriteLine($"Your grade is D {symbol}");
             Console.WriteLine("Your grade did not meet the expectation. Better luck next time!");
         }   
 
