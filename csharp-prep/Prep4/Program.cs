@@ -7,27 +7,27 @@ class Program
     
     {
         List<int> numbers = new List<int>();
-        int number =-1;
+        int userNumber =-1;
     
 
         
-        while (number != 0)
+        while (userNumber != 0)
         
         {    
             Console.WriteLine("Enter a list of numbers, type 0 when finished"); 
             string userInput = Console.ReadLine();
-            number = int.Parse(Console.ReadLine());
-            if (number!= 0)
+            userNumber = int.Parse(Console.ReadLine());
+            if (userNumber!= 0)
             {
-                numbers.Add(number);
+                numbers.Add(userNumber);
             }
         }
         // Part 1 : Compute the sum 
         int sum = 0;
 
-        foreach (int userNumber in numbers)
+        foreach (int number in numbers)
         {
-            sum += userNumber;
+            sum += number;
         } 
         Console.WriteLine($"The sum is:{sum}");
 
@@ -38,7 +38,7 @@ class Program
         // Part 3: Find the max
 
         int max = numbers[0];
-        foreach (int userNumber in numbers)
+        foreach (int number in numbers)
         {
             if (number > max)
             {
