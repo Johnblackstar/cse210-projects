@@ -14,12 +14,9 @@ class Program
         while (number != 0)
         
         {    
-            Console.WriteLine("Enter a list of numbers, type 0 when finished");
-            Console.WriteLine ("Enter a number");
+            Console.WriteLine("Enter a list of numbers, type 0 when finished"); 
             string userInput = Console.ReadLine();
             number = int.Parse(Console.ReadLine());
-            
-
             if (number!= 0)
             {
                 numbers.Add(number);
