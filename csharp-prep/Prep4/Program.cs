@@ -10,11 +10,12 @@ class Program
         int userNumber =-1;
     
 
-        
+        Console.WriteLine("Enter a list of numbers, type 0 when finished"); 
         while (userNumber != 0)
         
         {    
-            Console.WriteLine("Enter a list of numbers, type 0 when finished"); 
+            
+            Console.Write("Enter a number: "); 
             //string userInput = Console.ReadLine();
             userNumber = int.Parse(Console.ReadLine());
             if (userNumber!= 0)
