@@ -20,17 +20,17 @@ class Program
             number = int.Parse(Console.ReadLine());
             
 
-            if (number!=0)
+            if (number!= 0)
             {
                 numbers.Add(number);
             }
-
+        }
         // Part 1 : Compute the sum 
         int sum = 0;
 
         foreach (int userNumber in numbers)
         {
-            sum+=userNumber;
+            sum += userNumber;
         } 
         Console.WriteLine($"The sum is:{sum}");
 
@@ -41,7 +41,7 @@ class Program
         // Part 3: Find the max
 
         int max = numbers[0];
-        foreach(int userNumber in numbers)
+        foreach (int userNumber in numbers)
         {
             if (number > max)
             {
@@ -50,8 +50,8 @@ class Program
         }
         Console.WriteLine ($"The max is: {max}");
 
-        }
-
-
     }
+
+
+    
 }
