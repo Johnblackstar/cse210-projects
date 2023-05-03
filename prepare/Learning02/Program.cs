@@ -1,9 +1,12 @@
 using System;
 
-class Program
-{
-    static void Main(string[] args)
+public class Job
+{   
+    public string _jobTitle = "Software Engineer";
+   
+    public void Display()
     {
-        Console.WriteLine("Hello Learning02 World!");
+        Console.WriteLine($"{_jobTitle}");
     }
 }
+
